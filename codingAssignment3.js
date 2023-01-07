@@ -119,10 +119,8 @@ console.log("------#7------");
 /* 7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).*/
 
 function wordMultiplier(word, n) {
-    var wordMultiplied, multiplier;
-    wordMultiplied = console.log(word + " repeated " + n + " times:");
-    mutliplier = console.log(word.repeat(n));
-    return wordMultiplied, word.repeat(n);
+    console.log(word + " repeated " + n + " times:");
+    return console.log(word.repeat(n));
 }
 
 wordMultiplier("Test", 5);
