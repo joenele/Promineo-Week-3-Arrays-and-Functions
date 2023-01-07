@@ -85,14 +85,14 @@ console.log(numbers.slice(0,1));
 
 console.log("\n");
 console.log("------#5------");
-console.log("Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.\n For example:\n namesArray = ['Kelly', 'Sam', 'Kate'] //given this array\n nameLengths = [5, 3, 4] //create this new array");
+console.log("Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.\nFor example:\nnamesArray = ['Kelly', 'Sam', 'Kate'] //given this array\nnameLengths = [5, 3, 4] //create this new array");
 
 let nameLengths = [];
 
 for (let i = 0; i < names.length; i++){
     nameLengths.push(names[i].length); // push method stores each name length to nameLengths array
 }
-
+console.log(names);
 console.log(nameLengths);
 
 
@@ -105,13 +105,13 @@ var sum = 0;
 for (let i = 0; i < nameLengths.length; i++) {
     sum += nameLengths[i]; // adds each nameLength array item length to sum
 }
-
+console.log(nameLengths);
 console.log("The sum of all the elements in the nameLengths array is: \n" + sum);
 
 
 console.log("\n");
 console.log("------#7------");
-console.log("7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).");
+console.log("Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).");
 
 function wordMultiplier(word, n) {
     console.log(word + " repeated " + n + " times:");
@@ -124,7 +124,7 @@ wordMultiplier("Test", 5);
 
 console.log("\n");
 console.log("------#8------");
-console.log("Write a function that takes two parameters, firstName and lastName, and returns a full name.\n The full name should be the first and the last name separated by a space.");
+console.log("Write a function that takes two parameters, firstName and lastName, and returns a full name.\nThe full name should be the first and the last name separated by a space.");
 
 function getFullName(firstName, lastName) {
     return console.log("Full Name: " + firstName + " " + lastName); // concatenate firstname, space, lastname
